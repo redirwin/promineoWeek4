@@ -58,5 +58,15 @@ public class Assignment {
         for (Integer key : employeeMap.keySet()) {
             System.out.println(key + ": " + employeeMap.get(key));
         }
+
+        // 7. Create a StringBuilder called idsBuilder.
+        StringBuilder idsBuilder = new StringBuilder();
+
+        // 8. Iterate over the ids HashSet and append each id, followed by a dash "-" to idsBuilder.
+
+        for (Integer id : ids) {
+            idsBuilder.append(id + "-");
+        }
+
     }
 }
