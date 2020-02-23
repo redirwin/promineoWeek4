@@ -25,7 +25,7 @@ public class Assignment {
         employeeNames.add("Lisa");
         employeeNames.add("Bart");
         employeeNames.add("Maggie");
-        
+
         System.out.println(employeeNames);
 
         ids.add(1);
@@ -35,6 +35,21 @@ public class Assignment {
         ids.add(5);
 
         System.out.println(ids);
+        
+        // 5. Create a variable int i = 0; then interate over ids using an enhanced
+        // for loop. Inside the enhanced for loop use employeeMap.put() to add a new
+        // entry to the map. The entry should consist of a key that is the id in the 
+        // enhanced for loop's current iteration, and a value that is the employeeName
+        // at position i of the employeeNames ArrayList. Increment i so that each
+        // iteration grabs the next element of the ArrayList.
 
+        int i = 0;
+
+        for (int id : ids) {
+            employeeMap.put(id, employeeNames.get(i));
+            i++;
+        }
+
+        System.out.println(employeeMap);
     }
 }
