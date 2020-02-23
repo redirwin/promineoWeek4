@@ -68,5 +68,9 @@ public class Assignment {
             idsBuilder.append(id + "-");
         }
 
+        // 9. Print the result of idsBuiolser.toString() to the console.
+
+        System.out.println(idsBuilder.toString());
+
     }
 }
