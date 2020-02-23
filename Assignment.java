@@ -50,6 +50,13 @@ public class Assignment {
             i++;
         }
 
-        System.out.println(employeeMap);
+        // 6. Once the employeeMap is fully populated, use another enhanced for loop
+        // to iterate over the employeeMap.keySet(), and use the key for each current
+        // iteration to print to the console both the current key and its assciated
+        // value in the map.
+
+        for (Integer key : employeeMap.keySet()) {
+            System.out.println(key + ": " + employeeMap.get(key));
+        }
     }
 }
