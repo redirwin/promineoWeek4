@@ -68,9 +68,21 @@ public class Assignment {
             idsBuilder.append(id + "-");
         }
 
-        // 9. Print the result of idsBuiolser.toString() to the console.
-
+        // 9. Print the result of idsBuilder.toString() to the console.
         System.out.println(idsBuilder.toString());
+
+        // 10. Create another StringBuilder called namesBuilder.
+        StringBuilder namesBuilder = new StringBuilder();
+
+        // 11. Iterate over the employeeNames ArrayList and append each name, followed by 
+        // a space " " to the namesBuilder.
+
+        for (String employee : employeeNames) {
+            namesBuilder.append(employee + " ");
+        }
+
+        // 12. Print the result of namesBuilder.toString() to the console.
+        System.out.println(namesBuilder.toString());
 
     }
 }
